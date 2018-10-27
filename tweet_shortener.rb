@@ -14,8 +14,8 @@ end
 def word_substituter(tweet)
   tweet_array = tweet.split
   tweet_array.map do |word|
-    if dictionary[word]
-    dictionary[word] #tell it to change element to the value of the key in dictionary, if it matches a key of dictionary
+    if word == dictionary[word]
+      word = dictionary[word] #tell it to change element to the value of the key in dictionary, if it matches a key of dictionary
   else
     word #tell it to just keep the word the same if it is not in dictionary
   end
