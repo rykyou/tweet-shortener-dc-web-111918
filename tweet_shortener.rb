@@ -20,4 +20,6 @@ def word_substituter(tweet)
     word #tell it to just keep the word the same if it is not in dictionary
   end
 end#after the end, it will return a new array with some elements changed to the values of dictionary
+
+tweet_array.join(' ')
 end 
