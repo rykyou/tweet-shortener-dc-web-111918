@@ -12,5 +12,5 @@ def dictionary
 end 
 
 def word_substituter(tweet)
-  
+  keys = dictionary
 end 
