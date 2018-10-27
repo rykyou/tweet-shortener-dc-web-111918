@@ -13,19 +13,19 @@ end
 
 def word_substituter(tweet)
   dictionary.each do |key, value|
-    
+    count = 0 
+    tweet_array.each do |word|
+      if word == keys[count]
+        word = values[count]
+        count += 1 
+      end
+    end 
   end
   keys = dictionary.keys
   values = dictionary.values 
   tweet_array = tweet.split
   
-  count = 0 
-  tweet_array.each do |word|
-    if word == keys[count]
-      word = values[count]
-      count += 1 
-    end
-  end 
+ 
   
   tweet_array.join(" ")
 end 
