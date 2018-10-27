@@ -22,6 +22,7 @@ def word_substituter(tweet)
       word = values[count]
       count += 1 
     end 
+  tweet_array
   end 
   
   tweet_array.join(" ")
