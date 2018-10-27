@@ -21,9 +21,6 @@ def word_substituter(tweet)
     if word == keys[count]
       word = values[count]
       count += 1 
-    end 
-  tweet_array
+    end
   end 
-  
-  tweet_array.join(" ")
 end 
