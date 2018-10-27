@@ -12,7 +12,9 @@ def dictionary
 end 
 
 def word_substituter(tweet)
-  
+  dictionary.each do |key, value|
+    
+  end
   keys = dictionary.keys
   values = dictionary.values 
   tweet_array = tweet.split
