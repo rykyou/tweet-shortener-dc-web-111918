@@ -12,6 +12,7 @@ def dictionary
 end 
 
 def word_substituter(tweet)
+  tweet_array = tweet.split
   tweet_array.map do |word|
   if dictionary[word]
     dictionary[word] #tell it to change element to the value of the key in dictionary, if it matches a key of dictionary
@@ -29,9 +30,6 @@ end#after the end, it will return a new array with some elements changed to the 
       end
     end 
   end
-  keys = dictionary.keys
-  values = dictionary.values 
-  tweet_array = tweet.split
   
  
   
