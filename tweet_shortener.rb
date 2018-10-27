@@ -22,7 +22,7 @@ def word_substituter(tweet)
   end.join(' ')
 end
 
-def bulk_tweet_shortener(tweet)
+def bulk_tweet_shortener(many_tweets)
   tweet = tweet.join(' ')
   puts word_substituter(tweet)
 end 
