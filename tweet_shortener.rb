@@ -14,10 +14,10 @@ end
 def word_substituter(tweet)
   tweet_array = tweet.split(' ')
   tweet_array.map do |word|
-    if dictionary[word] #check if the dictionary contains the word as a key
-      dictionary[word] #return the value of dictionary[word] if it exists
+    if dictionary[word] 
+      dictionary[word] 
     else
-      word #if it does not exist, then just return the word
+      word 
   	end
-  end.join(' ') #map returns a new array but does not modify the original array. So chain.join onto the *return value* of .map after the end
+  end.join(' ')
 end
