@@ -12,6 +12,14 @@ def dictionary
 end 
 
 def word_substituter(tweet)
+  tweet_array.map do |word|
+  if dictionary[word]
+    dictionary[word] #tell it to change element to the value of the key in dictionary, if it matches a key of dictionary
+  else
+    word #tell it to just keep the word the same if it is not in dictionary
+  end
+end#after the end, it will return a new array with some elements changed to the values of dictionary
+
   dictionary.each do |key, value|
     count = 0 
     tweet_array.each do |word|
