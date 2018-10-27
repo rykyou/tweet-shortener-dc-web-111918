@@ -16,13 +16,11 @@ def word_substituter(tweet)
   values = dictionary.values 
   tweet_array = tweet.split
   
+  count = 0 
   tweet_array.each do |word|
-    count = 0 
-    while count < 10 
-      if word == keys[count]
-        word = values[count]
-        count += 1 
-      end 
+    if word == keys[count]
+      word = values[count]
+      count += 1 
     end 
   end 
   
