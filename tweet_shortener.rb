@@ -1,4 +1,4 @@
-def dictionary(tweet)
+def dictionary
   substitutes = {
     "hello" => 'hi'
     "to, two, too" => '2' 
