@@ -23,4 +23,6 @@ def word_substituter(tweet)
       count += 1 
     end
   end 
+  
+  tweet_array.join(" ")
 end 
