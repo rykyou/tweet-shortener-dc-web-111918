@@ -27,5 +27,5 @@ def bulk_tweet_shortener(many_tweets)
   many_tweets.each do |tweet|
     new_tweets<< word_substituter(tweet)
   end 
-  new_tweets.join(" ")
+  puts new_tweets.join(" ")
 end 
